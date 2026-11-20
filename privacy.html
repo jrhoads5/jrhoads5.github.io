@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order Splitter for YNAB – Privacy Policy</title>
+<meta name="description" content="Order Splitter for YNAB runs in your browser. No servers, no analytics.">
+<link rel="icon" href="icon128.png">
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px 60px;line-height:1.6;color:#1c1917;background:#fff}
+@media (prefers-color-scheme:dark){body{background:#121212;color:#e5e7eb}a{color:#fb923c}}
+header{display:flex;align-items:center;gap:12px;margin-bottom:8px}header img{width:48px;height:48px}
+h1{font-size:28px;margin:0}h2{margin-top:32px;font-size:20px}a{color:#c2410c}
+</style></head><body>
+<header><img src="icon128.png" alt=""><span>Order Splitter for YNAB</span></header>
+<h1>Privacy Policy – Order Splitter for YNAB</h1>
+<p><strong>Last updated: November 20, 2026</strong></p>
+<p>Order Splitter for YNAB (&quot;Order Splitter&quot;, &quot;the extension&quot;) is a Chrome extension that matches your Amazon orders to transactions in your YNAB plan, adds item names to transaction memos and, if you choose, splits transactions by item and category. This policy explains exactly what data the extension touches and what it does with it.</p>
+<h2>The short version</h2>
+<ul>
+<li>Everything runs <strong>inside your own browser</strong>. We operate <strong>no servers</strong>, and the extension has no analytics, ads or tracking.</li>
+<li>The extension reads your Amazon order pages and your YNAB data <strong>only to show you matches and to make the changes you approve</strong>.</li>
+<li>It changes YNAB <strong>only when you click &quot;Apply&quot;</strong>, and only the transactions you selected.</li>
+<li>Your data is <strong>never sold, shared with, or passed to any third party</strong>, knowingly or unknowingly.</li>
+<li>The extension never asks for, sees or stores your Amazon or YNAB password.</li>
+</ul>
+<h2>What data the extension accesses, and why</h2>
+<p><strong>1. YNAB data (through the official YNAB API, api.ynab.com).</strong> After you connect your YNAB account, the extension reads your plan names, account names, category names, and transactions within the date range you pick (date, payee, amount, memo, account, category, approval status). It uses this data for one purpose: to find transactions that belong to Amazon orders and show them to you for review. When you click <strong>Apply</strong>, it sends updates for the transactions you selected back to YNAB: a new memo, and (Pro) a split into subtransactions with the categories you chose, and optionally the approved status.</p>
+<p><strong>2. Amazon order data (from amazon.com, using your existing signed-in browser session).</strong> The extension loads your own order history, order details, invoices and &quot;Your Payments → Transactions&quot; pages, the same pages you can open yourself, and reads order numbers, order dates, item names, product IDs (ASINs), quantities, prices, order totals, tax, shipping, gift card amounts, refunds, and the dates, amounts and card type and last four digits of the charges Amazon lists. It uses this data only to match charges to your YNAB transactions and to write item names into memos and splits. It does not read or store your Amazon password, full card numbers, or addresses.</p>
+<p><strong>3. Your choices.</strong> The extension remembers, on your computer, which YNAB category you picked for an item, so it can suggest the same category next time (Pro), and your settings.</p>
+<h2>How data is stored and secured</h2>
+<ul>
+<li><strong>YNAB access token:</strong> When you connect with &quot;Connect YNAB&quot; (OAuth), YNAB gives the extension an access token that expires after 2 hours. It is kept only in Chrome&#39;s in-memory session storage and is deleted when the browser closes. If you instead paste a YNAB Personal Access Token (a testing option), it is stored in Chrome&#39;s extension storage on your computer until you disconnect.</li>
+<li><strong>Order details:</strong> To avoid re-loading old pages, details of orders older than 10 days (items, prices, totals, charges) are cached in Chrome&#39;s extension storage on your computer (up to 1,500 orders). YNAB transactions are not stored; they are loaded fresh each time and kept in memory only while the page is open.</li>
+<li><strong>Category choices and settings:</strong> stored in Chrome&#39;s extension storage on your computer until you delete them.</li>
+<li>All connections to YNAB and Amazon use HTTPS. Data never leaves your computer except (a) requests to api.ynab.com to read and update your YNAB data, and (b) requests to amazon.com to load your own order pages.</li>
+<li>The extension&#39;s code is packaged with the extension; it does not download or run remote code.</li>
+</ul>
+<h2>How long data is kept</h2>
+<p>OAuth tokens: up to 2 hours, or until the browser closes. Cached orders, category choices, settings and a pasted Personal Access Token: until you remove them (see below) or uninstall the extension, which deletes all of it.</p>
+<h2>Sharing</h2>
+<p>We do not sell, rent, share or transfer your YNAB or Amazon data to anyone. The only parties that receive data are YNAB (the updates you approve) and Amazon (ordinary page requests from your own browser, exactly as if you opened the pages).</p>
+<h2>Payments and licensing</h2>
+<p>The free version needs no account. If you buy Pro, the purchase is handled by our payment provider (Polar, polar.sh) on its own website, under its own privacy policy; the extension itself never sees your card. To check a Pro license, a future version will send only the license key to Polar&#39;s license API.</p>
+<h2>Deleting your data</h2>
+<ul>
+<li><strong>In the extension:</strong> Settings → Your data → &quot;Disconnect YNAB&quot;, &quot;Forget category choices&quot;, &quot;Clear saved order details&quot;, or &quot;Erase everything&quot;.</li>
+<li><strong>Uninstalling</strong> the extension removes all of its stored data from Chrome.</li>
+<li><strong>Revoke YNAB access:</strong> YNAB → Account Settings → Developer Settings / Authorized Applications.</li>
+<li><strong>Email us</strong> at <a href="mailto:support@example.com">support@example.com</a> and we will help. We hold no copy of your data on any server, so there is nothing for us to delete on our side, but we will confirm this in writing on request.</li>
+</ul>
+<h2>Children</h2>
+<p>The extension is not directed to children under 13.</p>
+<h2>Changes</h2>
+<p>If we change what data the extension uses or how, we will update this policy, change the &quot;Last updated&quot; date, and ask for your consent in the extension before using data in a new way.</p>
+<h2>Contact</h2>
+<p>Questions: <a href="mailto:support@example.com">support@example.com</a></p>
+<p>Order Splitter is an independent product and is not affiliated with, endorsed by, or sponsored by YNAB (You Need A Budget) or Amazon.</p>
+
+</body></html>
